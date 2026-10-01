@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/realtime/:path*",
+      "destination": "https://weizend-realtime.weizendtv.workers.dev/:path*"
+    },
+    {
       "source": "/:path*",
       "destination": "https://weizend-botrix.weizendtv.workers.dev/:path*"
     }
